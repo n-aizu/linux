@@ -196,17 +196,10 @@
 	status = "okay";
 };
 
-/*&uart4 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&uart4_pins>;
-
-	status = "okay";
-};*/
-
 &usb {
 	status = "okay";
 
-	control@44e10000 {
+	control@44e10620 {
 		status = "okay";
 	};
 
@@ -227,7 +220,7 @@
 		dr_mode = "host";
 	};
 
-	dma-controller@07402000  {
+	dma-controller@47402000  {
 		status = "okay";
 	};
 };
@@ -345,7 +338,6 @@
 	pinctrl-0 = <&davinci_mdio_default>;
 	pinctrl-1 = <&davinci_mdio_sleep>;
 };
-
 
 &mmc1 {
 	status = "okay";
